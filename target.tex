@@ -16,15 +16,18 @@
 Simulation of the pion production coming out from the MICE target using the MARS simulation software and implementation of this simulation into the MICE Monte Carlo software.
 \end{abstract}
 
+\newpage
+
 \section{Motivation}
 
 Non trivial discrepancies in the data versus Monte Carlo comparison have justified the necessity to reconsider the pions momentum distribution used as primary input of the MICE Monte Carlo.
-The former model consisted in a fit done with three Gaussian of a pion distribution produced in 2008 with a earlier version of the MARS simulation software. Lack of documentation on this first study made hard to evaluate the goodness of the model. 
+The former model consisted in a fit done with three Gaussian of a pion distribution produced in 2008 with a earlier version of the MARS simulation software. Lack of documentation on this first study made hard to evaluate the goodness of the model that shows a peculiar hard cut in the distribution.
+
+The MICE target has been described in its major components using the MARS simulation software.
 
 \section{The MICE target in the ISIS proton beam}
 
-Brief description of the MICE target.
-
+Brief description of the MICE target.\\
 ISIS proton beam: energy, dimension, position...
 
 \section{MARS simulation}
@@ -41,19 +44,21 @@ The design of the MICE target, in particular the surrounding structure, is defin
 
 \section{MAUS simulation}
 
-The Monte Carlo in MICE is produced in a two-steps process. In the first step a pion beam in produced according to an initial momentum distribution and propagated using G4BL up to XXX where MAUS takes over propagating the particles through the remaining part of the beam line up to the EMR, passing for the cooling channel, according to the geometry and run selected to be simulated.
+The Monte Carlo in MICE is produced in a two-steps process. In the first step a pion beam is produced according to an initial momentum distribution and propagated using G4BL up to the bending dipole D2, where MAUS takes over propagating the particles (pions, muons and electrons coming from decays) through the remaining part of the beam line up to the EMR, passing for the cooling channel, according to the geometry and run selected to be simulated.
 
 \subsection{Monte Carlo and data comparison}
 
 Few figure of merits have been considered: time of flight of the particles between TOF0 and TOF1 and momentum distribution of pions and muons in the upstream tracker at station 5.
 Simulations have been produced for 140, 200 and 240 MeV/c nominal pionic beams.
 
+\section{Luminosity monitor?}
+\textit{Shall we produce with MARS scattered protons and compare the flux in the LM position (-25 deg, 10 meters away) with the measured one?} 
+
 \section{Conclusions}
 
 \begin{thebibliography}{9}
 \bibitem{mars} https://mars.fnal.gov/
-\bibitem{micenote1} MICE note #1, http://mice.iit.edu/micenotes/public/pdf/MICE0396/MICE0396.pdf
-\bibitem{micenote2} MICE note #2, http://mice.iit.edu/micenotes/public/pdf/MICE0396/MICE0396.pdf
+\bibitem{micenote1} MICE note \#216, http://mice.iit.edu/micenotes/public/pdf/MICE0242/MICE0216.pdf
 \end{thebibliography}
 
 
