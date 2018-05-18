@@ -2,6 +2,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
+\usepackage[toc,page]{appendix}
 \input GetPackages
 
 \title{MICE Target Simulation}
@@ -66,8 +67,31 @@ The Monte Carlo in MICE is produced in a two-step process. In the first step a p
 A few figures of merit have been considered: time of flight of the particles between TOF0 and TOF1 and momentum distribution of pions and muons in the upstream tracker at station 5.
 Simulations have been produced for 140, 200 and 240 MeV/c nominal pionic beams, with further 
 
-\section{Luminosity monitor?}
-\textit{Shall we produce with MARS scattered protons and compare the flux in the LM position (-25 deg, 10 meters away) with the measured one?} 
+\section{Luminosity monitor}
+%\textit{Shall we produce with MARS scattered protons and compare the flux in the LM position (-25 deg, 10 meters away) with the measured one?} 
+A luminosity monitor (Fig.~\ref{fig:LM1},~\ref{fig:LM2}) has been designed and constructed to measure the particle rate close to the MICE target and determine the number of protons hitting the target as a function of depth.
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=1.0\columnwidth]{./figures/LM1.jpg}
+    \caption{View of the ISIS synchrotron from above the targed. MICE beam line on the left and luminosity monitor on the right 10~m away, standing on the top of the yellow turret.}
+    \label{fig:LM1}
+  \end{center}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+  \begin{subfigure}
+  \centering
+    \includegraphics[width=0.59\columnwidth]{./figures/LM2.png}
+  \end{subfigure}
+  \begin{subfigure}
+  \centering
+    \includegraphics[width=0.39\columnwidth]{./figures/LM3.jpg}
+  \end{subfigure}
+  \caption{Design of the luminosity monitor (left) and the luminosity monitor box itself (right).}
+  \label{fig:LM2}
+  \end{center}
+\end{figure}
 
 \section{Conclusions}
 
@@ -83,9 +107,14 @@ Simulations have been produced for 140, 200 and 240 MeV/c nominal pionic beams, 
 
 \end{thebibliography}
 
+\begin{appendices}
+\chapter{ISIS Survey Drawing}
+
 \includepdf{./figures/BeampipeSurvey1.pdf}
 \includepdf{./figures/BeampipeSurvey2.pdf}
 \includepdf{./figures/BeampipeSurvey3.pdf}
 \includepdf{./figures/IsisGeometry.pdf}
+
+\end{appendices}
 
 \end{document}
