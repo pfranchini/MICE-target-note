@@ -80,9 +80,9 @@ As noted in \cite{micenote480} the target is operated through the RATS control s
 
 \section{MARS simulation}
 
-The design of the MICE target, in particular the surrounding structure, is defined as in~Fig.~\ref{fig:MARSvent}. The presented design has been based on schematics (ref) and surveys (refs). The MICE beamline is orientated at 25 deg with respect to the ISIS beamline section where the target is located. In addition to the cylindrical bored-target structure from the previous model, various features of the surrounding ISIS beampipe structure have been included, such as the rectangular beampipe shape and target window structure, similarly oriented at 25 degrees toward the MICE beamline. The resulting pion distribution is collected as the particle flux through a surface downstream between the ISIS and MICE beamlines.
+The design of the MICE target, in particular the surrounding structure, is defined as in~Fig.~\ref{fig:MARSwindow}. The presented design has been based on schematics (ref) and surveys (refs). The MICE beamline is orientated at 25 deg with respect to the ISIS beamline section where the target is located. In addition to the cylindrical bored-target structure from the previous model, various features of the surrounding ISIS beampipe structure have been included, such as the rectangular beampipe shape and target window structure oriented at 25 degrees toward the MICE beamline, as shown in Figs \ref{fig:MARSwindow}, \ref{fig:MARSXY}. An initial section of the MICE beampipe up to the Q1 aperture is also modelled in MARS as in \ref{fig:MARSXZ}. For efficient runtime, particles are selected at 1m from the target IP inside the MICE beampipe. This produces the resulting pion distribution which is fitted and passed to G4BL.
 
-As both BCD and User Delay are altered live by the MICE operator to respond to ISIS beam drift \& target deterioration in order to optimise statistics, modelling of an exact dip cycle to replicate that throughout the entire MICE data collection is difficult. Instead a number of model iterations with varying proton energy and beamwidth have been simulated to compare pion production, momentum distribution \& results from downstream propagation. 
+As both BCD and User Delay are altered live by the MICE operator to respond to ISIS beam drift \& target deterioration in order to optimise statistics, modelling of an exact dip cycle to replicate target dip throughout the entire MICE data collection is difficult. Instead a number of model iterations with varying proton energy and beamwidth have been simulated to compare pion production, momentum distribution \& results from downstream propagation. 
 
 \begin{figure}[t!]
   \begin{center}
@@ -97,6 +97,14 @@ As both BCD and User Delay are altered live by the MICE operator to respond to I
     \includegraphics[width=1.0\columnwidth]{./figures/XYGeom-v6-Q1-z=22cm.png}
     \caption{Design of the target in the MARS simulation. ( require z=60cm?along the x-axis? ) }
     \label{fig:MARSXY}
+  \end{center}
+\end{figure}
+
+\begin{figure}[t!]
+  \begin{center}
+    \includegraphics[width=1.0\columnwidth]{./figures/XZGeom-v6-Q1-y=6cm.png}
+    \caption{MICE target inside ISIS beampipe, alongside MICE beampipe in the MARS simulation. }
+    \label{fig:MARSXZ}
   \end{center}
 \end{figure}
 
