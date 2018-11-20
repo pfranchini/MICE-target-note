@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Motivation}{2}{section.1}
+\contentsline {section}{\numberline {2}The MICE target in the ISIS proton beam}{2}{section.2}
+\contentsline {section}{\numberline {3}MARS simulation}{3}{section.3}
+\contentsline {section}{\numberline {4}MAUS simulation}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Monte Carlo and data comparison}{6}{subsection.4.1}
+\contentsline {section}{\numberline {5}Luminosity monitor}{8}{section.5}
+\contentsline {section}{\numberline {6}Conclusions}{12}{section.6}
+\contentsline {section}{Appendices}{12}{section*.3}

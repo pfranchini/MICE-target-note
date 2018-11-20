@@ -28,95 +28,131 @@ The MICE target has been described in its major components using the MARS simula
 \section{The MICE target in the ISIS proton beam}
 
 %Brief description of the MICE target.\\
-The MICE target operates parasitically on protons undergoing acceleration within the ISIS synchrotron, dipping into the low-density halo of the beam on selected pulses just prior to their extraction, with an ~1 Hz frequency. It is designed as a bored TiAl cylinder with inner radius 2.275 cm and outer radius 2.975 cm. The resulting thickness of material for proton collisions is significantly lower than one interaction length (approx 27.8cm for titanium), giving an interaction probability of order ~1\%. As a result, order 1E12 simulated ISIS protons are required for sufficient statistics. 
+The MICE target operates parasitically on protons undergoing acceleration within the ISIS synchrotron, dipping into the low-density halo of the beam on selected pulses just prior to their extraction, with a ~1 Hz frequency. It is designed as a bored TiAl cylinder with inner radius 2.275 cm and outer radius 2.975 cm. The resulting thickness of material for proton collisions is significantly lower than one interaction length (approx 27.8cm for titanium), giving an interaction probability of order ~1\%. As a result, order 1E12 simulated ISIS protons are required for sufficient statistics to fit the momentum distribution precisely. 
 
 %ISIS proton beam: energy, dimension, position...\\
 The ISIS synchrotron circulates two beam bunches of approximately 1.4E13 protons each per cycle, with these undergoing close to 10,000 revolutions before extraction in a circulation time of 10ms. Proton beam-size shrinking between radii of ~67mm and 48mm during it's acceleration through the synchrotron results in proton collision energy and beamwidth both varying in time with respect to the initial ISIS proton injection trigger, as well as due to small field fluctuations. Hence the target undergoes many proton collisions of between 650MeV and 800MeV collision energy during each dip (See Table \ref{Table:Inj}). 
 
+
 \begin{table*}
 \centering
 \label{Table:Inj}
-\begin{tabular}{ c c }
-\hline Time after injection (ms) & Proton Energy (MeV) \\
-\hline \vspace{-2.5mm} \\
-$7.0$ & $615.59$ \\ \hline
-$7.1$ & $626.53$ \\
-$7.2$ & $637.25$ \\
-$7.3$ & $647.73$ \\
-$7.4$ & $657.96$ \\
-$7.5$ & $667.93$ \\
-$7.6$ & $688.62$ \\
-$7.9$ & $687.02$ \\
-$7.8$ & $696.12$ \\
-$7.9$ & $704.90$ \\ \hline
-$8.0$ & $713.35$ \\ \hline
-$8.1$ & $721.47$ \\
-$8.2$ & $729.23$ \\
-$8.3$ & $736.64$ \\
-$8.4$ & $743.68$ \\
-$8.5$ & $750.33$ \\
-$8.6$ & $756.60$ \\
-$8.7$ & $762.48$ \\
-$8.8$ & $767.95$ \\
-$8.9$ & $773.01$ \\ \hline
-$9.0$ & $777.65$ \\ \hline
-$9.1$ & $781.87$ \\
-$9.2$ & $785.66$ \\
-$9.3$ & $789.02$ \\
-$9.4$ & $791.94$ \\
-$9.5$ & $794.41$ \\
-$9.6$ & $796.44$ \\
-$9.7$ & $798.02$ \\
-$9.8$ & $799.15$ \\
-$9.9$ & $799.83$ \\ \hline
-$10.0$ & $800.06$ \\
+\begin{tabular}{ c c c c c c }
+\hline \multicolumn{6}{c}{ISIS Beam Energy after injection}\\
+\hline \vspace{-4.5mm} \\
+Time after injection (ms) & $7.0$ & $7.1$ & $7.2$ & $7.3$ & $7.4$ \\
+Proton Energy (MeV) & $615.59$ & $626.53$ & $637.25$ & $647.73$ & $657.96$ \\ \hline 
+Time after injection (ms) & $7.5$ & $7.6$ & $7.7$ & $7.8$ & $7.9$ \\ 
+Proton Energy (MeV) & $667.93$ & $688.62$ & $687.02$ & $696.12$ & $704.90$ \\ \hline
+Time after injection (ms) & $8.0$ & $8.1$ & $8.2$ & $8.3$ & $8.4$ \\ 
+Proton Energy (MeV) & $713.35$ & $721.47$ & $729.23$ & $736.64$ & $743.68$ \\ \hline
+Time after injection (ms) & $8.5$ & $8.6$ & $8.7$ & $8.8$ & $8.9$ \\
+Proton Energy (MeV) & $750.33$ & $756.60$ & $762.48$ & $767.95$ & $773.01$ \\ \hline
+Time after injection (ms) & $9.0$ & $9.1$ & $9.2$ & $9.3$ & $9.4$ \\ 
+Proton Energy (MeV) & $777.65$ & $781.87$ & $785.66$ & $789.02$ & $791.94$ \\ \hline
+Time after injection (ms) & $9.5$ & $9.6$ & $9.7$ & $9.8$ & $9.9$ \\ 
+Proton Energy (MeV) & $794.41$ & $796.44$ & $798.02$ & $799.15$ & $799.83$ \\
+
 \hline
 \end{tabular}
 \caption{Time after injection (ms) vs Proton Energy in the ISIS beam (MeV). Interactions from target dipping occur over this time range.}
 \end{table*}
 
+
+%\begin{table*}
+%\centering
+%\label{Table:Inj}
+%\begin{tabular}{ c c }
+%\hline Time after injection (ms) & Proton Energy (MeV) \\
+%\hline \vspace{-2.5mm} \\
+%$7.0$ & $615.59$ \\ \hline
+%$7.1$ & $626.53$ \\
+%$7.2$ & $637.25$ \\
+%$7.3$ & $647.73$ \\
+%$7.4$ & $657.96$ \\
+%$7.5$ & $667.93$ \\
+%$7.6$ & $688.62$ \\
+%$7.9$ & $687.02$ \\
+%$7.8$ & $696.12$ \\
+%$7.9$ & $704.90$ \\ \hline
+%$8.0$ & $713.35$ \\ \hline
+%$8.1$ & $721.47$ \\
+%$8.2$ & $729.23$ \\
+%$8.3$ & $736.64$ \\
+%$8.4$ & $743.68$ \\
+%$8.5$ & $750.33$ \\
+%$8.6$ & $756.60$ \\
+%$8.7$ & $762.48$ \\
+%$8.8$ & $767.95$ \\
+%$8.9$ & $773.01$ \\ \hline
+%$9.0$ & $777.65$ \\ \hline
+%$9.1$ & $781.87$ \\
+%$9.2$ & $785.66$ \\
+%$9.3$ & $789.02$ \\
+%$9.4$ & $791.94$ \\
+%$9.5$ & $794.41$ \\
+%$9.6$ & $796.44$ \\
+%$9.7$ & $798.02$ \\
+%$9.8$ & $799.15$ \\
+%$9.9$ & $799.83$ \\ \hline
+%$10.0$ & $800.06$ \\
+%\hline
+%\end{tabular}
+%\caption{Time after injection (ms) vs Proton Energy in the ISIS beam (MeV). Interactions from target dipping occur over this time range.}
+%\end{table*}
+
  Furthermore due to the field changes in the synchrotron, the ISIS beam often drifts from the well-defined beam center, such that the beam centre displacement (BCD) figure recorded is only a nominal value. 
 
-As noted in \cite{micenote480} the target is operated through the RATS control software, allowing the user to alter both BCD and User Delay (defined from the machine start trigger + $(2^{n}\times20ms)-15ms$, with n some integer) s.t. dips travelling further to achieve lower BCD may operate with reduced User Delay to compensate. 
+As noted in \cite{micenote480} the target is operated through the RATS control software, allowing the user to alter both BCD and User Delay (defined from the machine start trigger + $(2^{n}\times20ms)-15ms$, with n some integer) such that dips travelling further to achieve lower BCD may operate with reduced User Delay to compensate. 
+
+\pagebreak
+\pagebreak
+\newpage
+\newpage
 
 \section{MARS simulation}
 
-The design of the MICE target, in particular the surrounding structure, is defined as in Fig. \ref{fig:MARSwindow}. The presented design has been based on schematics \cite{beampipesurvey1}\cite{beampipesurvey2}\cite{beampipesurvey3} and surveys \cite{ISISbeamlinesurvey}\cite{MICEsurvey}. The MICE beamline is orientated at 25 deg with respect to the ISIS beamline section where the target is located. In addition to the cylindrical bored-target structure from the previous model, various features of the surrounding ISIS beampipe structure have been included, such as the surrounding beampipe and target window structure oriented at 25 degrees toward the MICE beamline, as shown in Figs \ref{fig:MARSwindow}, \ref{fig:MARSXY}. An initial section of the MICE beampipe up to the Q1 aperture (approx 2.5m downstream) is also modelled in MARS as in \ref{fig:MARSXZ}. For efficient runtime, particles are selected at 1m from the target IP inside the MICE beampipe. This produces the resulting pion distribution which is fitted and passed to G4BL. Comparison was made with some output taken 2m downstream, however this showed little change to the observed momentum distribution.
-
-As both BCD and User Delay are altered live by the MICE operator to respond to ISIS beam drift \& target deterioration in order to optimise statistics, modelling of an exact dip cycle to replicate target dip throughout the entire MICE data collection is difficult. Instead a number of model iterations with varying proton energy and beamwidth have been simulated to compare pion production, momentum distribution \& results from downstream propagation. This is shown in Fig. \ref{fig:PiMomentum}. 
-
-\begin{figure}[t!]
+\begin{figure}[b!]
   \begin{center}
-    \includegraphics[width=1.0\columnwidth]{./figures/XZGeom-v6-Q1-y=6cm-Zoom.png}
-    \caption{Design of the target in the MARS simulation. ( require z=60cm?along the x-axis? ) }
+    \includegraphics[width=0.7\columnwidth]{./figures/XZGeom-v6-Q1-y=6cm-Zoom.png}
+    \caption{Design of the target in the MARS simulation. STST304 structures are shown in purple, with the pink ring at (0,0) the cross-sectional slice of the TiAl target, blue is air and white is vacuum. Cross-section taken at y=6cm.}
     \label{fig:MARSwindow}
   \end{center}
 \end{figure}
 
 \begin{figure}[t!]
   \begin{center}
-    \includegraphics[width=1.0\columnwidth]{./figures/XYGeom-v6-Q1-z=22cm.png}
-    \caption{Design of the target in the MARS simulation. STST304 structures are shown in purple, with the pink ring at (0,0) the cross-sectional slice of the TiAl target taken at some y>0. ( require z=60cm?along the x-axis? ) }
+    \includegraphics[width=0.62\columnwidth]{./figures/XYGeom-v6-Q1-z=22cm.png}
+    \caption{Design of the target in the MARS simulation. STST304 structures are shown in purple, blue is air and white is vacuum. Cross-section taken at z=22cm.} 
     \label{fig:MARSXY}
   \end{center}
 \end{figure}
 
 \begin{figure}[t!]
   \begin{center}
-    \includegraphics[width=1.0\columnwidth]{./figures/XZGeom-v6-Q1-y=6cm.png}
-    \caption{MICE target inside ISIS beampipe, alongside MICE beampipe in the MARS simulation. }
+    \includegraphics[width=0.62\columnwidth]{./figures/XZGeom-v6-Q1-y=6cm.png}
+    \caption{MARS geometry of the MICE target inside the ISIS beampipe, alongside the MICE beampipe. }
     \label{fig:MARSXZ}
   \end{center}
 \end{figure}
 
-\begin{figure}[t!]
+\pagebreak
+
+The design of the MICE target, in particular the surrounding structure, is defined as in Fig. \ref{fig:MARSwindow}. The presented design has been based on schematics \cite{beampipesurvey1}\cite{beampipesurvey2}\cite{beampipesurvey3} and surveys \cite{ISISbeamlinesurvey}\cite{MICEsurvey}. The MICE beamline is orientated at 25 deg with respect to the ISIS beamline section where the target is located. In addition to the cylindrical bored-target structure from the previous model, various features of the surrounding ISIS beampipe structure have been included, such as the surrounding beampipe and target window structure oriented at 25 degrees toward the MICE beamline, as shown in Figs \ref{fig:MARSwindow}, \ref{fig:MARSXY}. An initial section of the MICE beampipe up to the Q1 aperture (approx 2.5m downstream) is also modelled in MARS as in \ref{fig:MARSXZ}. For efficient runtime, particles are selected at 1m from the target IP inside the MICE beampipe. This produces the resulting pion distribution which is fitted and passed to G4BL. Comparison was made with MARS output taken 2m downstream, however this showed little change to the observed momentum distribution to be fitted.
+
+%As both BCD and User Delay are altered live by the MICE operator to respond to ISIS beam drift \& target deterioration in order to optimise statistics, modelling of an exact dip cycle to replicate target dip throughout the entire MICE data collection is difficult. Instead a number of model iterations with varying proton energy and beamwidth have been simulated to compare pion production, momentum distribution \& results from downstream propagation. This is shown in Fig. \ref{fig:PiMomentum}. 
+As both BCD and User Delay are altered live by the MICE operator to respond to ISIS beam drift \& target deterioration, modelling a dip cycle to replicate the target operation throughout the entire MICE data collection is not possible. Instead a number of model iterations with varying proton energy and beamwidth have been simulated to compare pion production \& momentum distribution, and results from downstream propagation. Pions produced for a given number of simulated beam protons at each energy are shown in fig. \ref{fig:PiMomentum}. 
+
+
+\begin{figure}[b!]
   \begin{center}
-    \includegraphics[width=1.0\columnwidth]{./figures/PiMomentumNew.png}
+    \includegraphics[width=1.0\columnwidth]{./figures/PiPlusMomentum650+700+750+800MeV2.png}
     \caption{Momentum of $\pi^{+}$ produced in Proton-target collisions, taken 1m downstream in the MICE beamline.}
     \label{fig:PiMomentum}
   \end{center}
 \end{figure}
 
+\pagebreak
 
 \section{MAUS simulation}
 
@@ -127,13 +163,54 @@ The Monte Carlo in MICE is produced in a two-step process. In the first step a p
 A few figures of merit have been considered: time of flight of the particles between TOF0 and TOF1 and momentum distribution of pions and muons in the upstream tracker at station 5.
 Simulations have been produced for 140, 200 and 240 MeV/c nominal pionic beams, with further planned.  
 
-Output from simulations with initial proton energies of 650, 700, 750 and 800 were passed to MAUS, showing the effect on the beamline of any variation of collision energy. The impact of this was considered to be nominal, with more significant deviation between MC and data due to misalignments between geometries in G4BL and  experiment.
+Output from simulations with initial proton energies of 650, 700, 750 and 800 were passed to MAUS, showing the effect on the beamline of any variation in collision energy. The impact of this was considered to be nominal, as MC results downstream have shown approximately the same normalised distributions irrespective of initial proton energy (see Figs \ref{fig:MAUSOutput1},\ref{fig:MAUSOutput2},\ref{fig:MAUSOutput3},\ref{fig:MAUSOutput4}), due to the dipole selection of the beam within the beampipe.
+
+
+%only particle flux is dependent on ISIS beam energy.
+
+\begin{figure}[b!]
+  \begin{center}
+    \includegraphics[width=1.0\columnwidth]{./figures/3-140+M3-Test4_650MeV_RecoMC_data.png}
+    \caption{Output from fully propagated MAUS MC using a 650MeV simulated ISIS beam energy vs data. Beam settings used are for run 10049, with 3-140+M3-Test4 beamline.}
+    \label{fig:MAUSOutput1}
+  \end{center}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=1.0\columnwidth]{./figures/3-140+M3-Test4_700MeV_RecoMC_data.png}
+    \caption{Output from fully propagated MAUS MC using a 700MeV simulated ISIS beam energy vs data. Beam settings used are for run 10049, with 3-140+M3-Test4 beamline.}
+    \label{fig:MAUSOutput2}
+  \end{center}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=1.0\columnwidth]{./figures/3-140+M3-Test4_750MeV_RecoMC_data.png}
+    \caption{Output from fully propagated MAUS MC using a 750MeV simulated ISIS beam energy vs data. Beam settings used are for run 10049, with 3-140+M3-Test4 beamline.}
+    \label{fig:MAUSOutput3}
+  \end{center}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=1.0\columnwidth]{./figures/3-140+M3-Test4_800MeV_RecoMC_data.png}
+    \caption{Output from fully propagated MAUS MC using a 800MeV simulated ISIS beam energy vs data. Beam settings used are for run 10049, with 3-140+M3-Test4 beamline.}
+    \label{fig:MAUSOutput4}
+  \end{center}
+\end{figure}
+
+
+
+
+There remain some significant deviations between the fully propagated MC and data, which are still under investigation. %These may be due to misalignments between geometries in G4BL and experiment, or inconsistencies in the pion decay length.
 
 \section{Luminosity monitor}
 
 %\textit{Shall we produce with MARS scattered protons and compare the flux in the LM position (-25 deg, 10 meters away) with the measured one?} 
 A luminosity monitor (LM) (Fig. \ref{fig:LM1}, \ref{fig:LM2} and \ref{fig:LM3} ) has been designed and constructed to measure the particle rate close to the MICE target and determine the number of protons hitting the target as a function of depth. The LM is centred 10m from the target interaction point at an angle of $-25$ degrees, such that it observes particles at equivalent angle to the MICE beamline at $25$ degrees. 
 The LM response was simulated in Geant4 using an appropriate model based on Fig. \ref{fig:LM3}, using an input of particles generated in MARS. This allowed an attempt at normalising the simulated target output with respect to the recorded LM readings for each run.
+
 
 \begin{figure}
   \begin{center}
@@ -153,21 +230,29 @@ The LM response was simulated in Geant4 using an appropriate model based on Fig.
 
 
 \begin{figure}
-  \begin{center}
-  \begin{subfigure}
+%  \begin{center}
+%  \begin{subfigure}[t][width=0.59\columnwidth]
   \centering
-    \includegraphics[width=0.59\columnwidth]{./figures/LM2.png}
-  \end{subfigure}
-  \begin{subfigure}
-  \centering
-    \includegraphics[width=0.39\columnwidth]{./figures/LM3.jpg}
-  \end{subfigure}
-  \caption{Design of the luminosity monitor (left) and the luminosity monitor box itself (right).}
+    \includegraphics[width=0.8\columnwidth]{./figures/LM2.png}
+%  \end{subfigure}
+%  \begin{subfigure}[t][width=0.39\columnwidth]
+%  \centering
+    \includegraphics[width=0.8\columnwidth]{./figures/LM3.jpg}
+%  \end{subfigure}
+    \includegraphics[width=0.8\columnwidth]{./figures/LM5.pdf}
+  \caption{Design of the luminosity monitor, top, and the luminosity monitor box itself, middle. Bottom shows the LM modelled in Geant4, prior to inclusion of the plastic surround. <- bottom needs to be updated to the new model, including separate LM1,2,3\&4 scintillators \& plastic surround/box. }
   \label{fig:LM3}
-  \end{center}
+%  \end{center}
 \end{figure}
 
+
+In practice the coincidence gates on the LM require coincident events of less than 10ns separation between LM1 \& LM2, LM3 \& LM4, or LM12 \& LM34. The LM was modelled in Geant4 and the output from a MARS simulation of order E11 beam protons propagated through the model, however due to the strict coincidence requirements, the number of events was too low to be statistically significant. In comparison with recorded data, we observe approx. 2000 LM triggers per spill, with each spill consisting of two circulating proton bunches of 1.3E13 protons each. These bunches pass the target of order 1000 times per dip, suggesting approx. 2E16 simulated protons should correspond to 2000 triggers, or equivalently a 1\% probability of a coincidence event given 1E11 simulated beam protons. Work is underway to alter the Geant4 model such that the LM model is several orders of magnitude larger, hence decreasing the requirement for such a large number of simulated events. 
+
+
+
 \section{Conclusions}
+
+There remain inconsistencies between the current fully propagated MC model and the data which are currently under investigation, however we have shown an independence of our observed distributions downstream on the initial proton beam energy, and hence to some degree, on the target. 
 
 \begin{thebibliography}{9}
 \bibitem{mars} https://mars.fnal.gov/
